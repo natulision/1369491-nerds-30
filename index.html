@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    <div class="index-grid">
     <header class="main_header">
       <nav class="main_navigation">
         <a class="main_header_logo" href="#">
@@ -23,10 +24,10 @@
           <li class="site-navigation_item"><a href="catalog.html">Магазин</a></li>
           <li class="site-navigation_item"><a href="blank.html">Контакты</a></li>
         </ul>
-        <a class="cart-link" href="blank.html">Корзина</a>
         <a class="cart_icon" href="blank.html">
           <img src="img/cart-icon.svg" width="15" height="11" alt="Иконка корзины">
         </a>
+        <a class="cart-link" href="blank.html">Корзина</a>
       </nav>
     </header>
 
@@ -83,21 +84,17 @@
 
         <div class="about_numbers">
           <img src="img/about_illustration.png" width="360" height="208" class="about_numbers_img" alt="Логотип Нёрдс">
-          <p>С 2004 года любим точность во всем:</p>
-          <ul class="numbers_list">
-            <li class="numbers_list_item">
-              <p>146%</p>
-              Уровень<br>самоотдачи
-            </li>
-            <li class="numbers_list_item">
-              <p>100%</p>
-              Соблюдение<br>сроков
-            </li>
-            <li class="numbers_list_item">
-              <p>50%</p>
-              Минимальная<br>предоплата
-            </li>
-          </ul>
+          <div class="numbers_content">
+            <h3>С 2004 года любим точность во всем:</h3>
+          </div>
+            <dl class="numbers_list">
+              <dt>146%</dt>
+              <dd>Уровень<br>самоотдачи</dd>
+              <dt>100%</dt>
+              <dd>Соблюдение<br>сроков</dd>
+              <dt>50%</dt>
+              <dd>Минимальная<br>предоплата</dd>
+            </dl>
         </div>
       </section>
       <section class="clients">
@@ -149,6 +146,6 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>
-      </body>
-    </body>
+  </div>
+  </body>
 </html>
