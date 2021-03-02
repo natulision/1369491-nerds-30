@@ -119,6 +119,7 @@ img{
     text-transform: none;
     display: grid;
     grid-template-columns: auto 760px;
+    margin-left: 140px;
 
     /*margin-left: 140px;*/
 }
@@ -287,15 +288,17 @@ img{
 }
 
 .socialmedia_list{
-    
+    display: flex;
     list-style: none;
 }
 .social-button{
-   display: inline-block;
+   display: flex;
    width: 81px;
    height: 81px;
    border-radius: 40px;
    background-color: var(--social-grey);
+   align-items: center;
+   justify-content: center;
 }
 .social-button:hover{
 background-color: var(--basic-dark-red);
@@ -313,6 +316,14 @@ background-color: var(--basik-superdark-red);
     font-size: 36px;
     line-height: 36px;
     font-weight: bold;
+}
+.main_footer{
+    display: grid;
+    grid-template-columns: 261px 660px;
+    gap: 9px;
+    margin-top: 75px;
+    margin-left: 140px;
+
 }
 /*
 .container{
@@ -396,6 +407,7 @@ background-color: var(--basik-superdark-red);
     font-weight: bold;
 }
 .radio{
+    display: none;
     width: 25px;
     height: 25px;
     border-radius: 14px;
