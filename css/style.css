@@ -425,6 +425,7 @@ background-color: var(--basik-superdark-red);
     list-style: none;
 
 }
+
 .radio{
     display: none;
     width: 25px;
@@ -439,6 +440,8 @@ background-color: var(--basik-superdark-red);
 
 .checkbox{
     position: absolute;
+    z-index: -1;
+    opacity: 0;
     width: 19px;
     height: 19px;
     margin-bottom: 17px;
@@ -446,7 +449,47 @@ background-color: var(--basik-superdark-red);
     margin-left: 0;
     background-color: #4D4D4D;
 }
-/*checked focused disabled*/
+.checkbox+label{
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.checkbox+label::before{
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #888888;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.checkbox:checked+label::before{
+border-color: #4D4D4D;
+background-color: #FFFFFF;
+background-image: url("../img/chekbox_form_checked.svg");
+}
+/* стили при наведении курсора на checkbox */
+.checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #4D4D4D;
+  }
+  /* стили для активного состояния чекбокса (при нажатии на него) */
+  .checkbox:not(:disabled):active+label::before {
+    background-color: #FFFFFF;
+    border-color: #4D4D4D;
+  }
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+  .checkbox:focus:not(:checked)+label::before {
+    border-color: #888888;
+  }
+  /* стили для чекбокса, находящегося в состоянии disabled */
+  .checkbox:disabled+label::before {
+    background-color: #888888;
+  }
 
 
 .pagination_item a{
