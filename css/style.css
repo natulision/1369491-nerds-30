@@ -298,10 +298,6 @@ img{
 .contacts_phone{
     color: inherit;
 }
-
-.contacts h3{
-    margin-bottom: 23px;
-}
 .socialmedia_list{
     display: flex;
     list-style: none;
@@ -310,6 +306,7 @@ img{
    display: flex;
    width: 81px;
    height: 81px;
+   margin-right: 9px;
    border-radius: 40px;
    background-color: var(--social-grey);
    align-items: center;
@@ -326,6 +323,7 @@ background-color: var(--basik-superdark-red);
     text-transform: none;
     font-size: 16px;
     line-height: 22px;
+    
 }
 .discount h2{
     font-size: 36px;
@@ -360,6 +358,7 @@ background-color: var(--basik-superdark-red);
     padding-bottom: 44px;
     padding-left: 52px;
     padding-right: 53px;  
+    display: none;
 }
 .project_item:hover .project_about_form{
     display: block;
