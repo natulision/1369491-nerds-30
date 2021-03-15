@@ -46,15 +46,17 @@ img{
     max-width: 100%;
     height: auto;
 }
-.main-navigation{
+.main_navigation{
     display: flex;
-    flex-direction: ;
+    flex-wrap: wrap;
     align-items: center;
     font-size: 16px;
     line-height: 30px;
     color: var(--basic-black);
     background-color:var(--basic-grey);
-    
+}
+.main_navigation a{
+    display: block;
 }
 .main_header{
     background-color: var(--basic-grey);
@@ -70,21 +72,29 @@ img{
 .site-navigation_item a:not([href]){
     background-color: var(--basic-grey);
 }
-/*
-.cart-link{
-    padding-top: 75px;
-    padding-right: 140px;
-    margin-left: auto;
-}
-.cart_icon{
-    margin-left: auto;
-}
-*/
 .cart_menu{
     display: flex;
-    margin-left: auto;
-    
+    margin-left: auto;  
 }
+.cart_link{
+    margin-top: 75px;
+    margin-right: 140px;
+   /*margin-left: auto;*/
+}
+.cart_icon::before{
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 24px;
+    width: 15px;
+    height: 11px;
+    background-image: url("img/cart-icon.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-right: 25px;
+}
+
+
 
 /*user navigation*/
 .site-navigation {
@@ -108,23 +118,19 @@ img{
 }
 
 /*Slider*/
-{
-
-}
 .slider{
     background-color: var(--basic-grey);
     width: 1440px;
-    justify-content:
+}
     /*gap: 10px;*/
     /*grid-template-columns: 360px 760px;*/
-}
+
 
 .slider_item-1{
     text-transform: none;
     display: grid;
     grid-template-columns: auto 760px;
     margin-left: 140px;
-
     /*margin-left: 140px;*/
 }
 .slider_item-1 h2{
@@ -201,7 +207,6 @@ img{
     border: none;
     padding: 17px 88px 18px 89px;
     border-radius: 3px;
-
 }
 .button:hover{
     background-color: var(--basic-dark-red);
@@ -230,6 +235,8 @@ img{
     margin-left: 140px;
     margin-right: 140px;
     margin-top: 73px;
+    border-top: 0,3em;
+    border-color: #888888;
 }
 .numbers_list{
     list-style: none;
@@ -428,6 +435,7 @@ background-color: var(--basik-superdark-red);
 }
 
 .checkbox{
+    position: absolute;
     width: 19px;
     height: 19px;
     margin-bottom: 17px;
@@ -435,6 +443,7 @@ background-color: var(--basik-superdark-red);
     margin-left: 0;
     background-color: #4D4D4D;
 }
+/*checked focused disabled*/
 
 
 .pagination_item a{
