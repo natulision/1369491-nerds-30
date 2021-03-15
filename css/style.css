@@ -235,8 +235,6 @@ img{
     margin-left: 140px;
     margin-right: 140px;
     margin-top: 73px;
-    border-top: 0,3em;
-    border-color: #888888;
 }
 .numbers_list{
     list-style: none;
@@ -421,6 +419,11 @@ background-color: var(--basik-superdark-red);
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
+}
+.sort_items{
+    display: flex;
+    list-style: none;
+
 }
 .radio{
     display: none;
